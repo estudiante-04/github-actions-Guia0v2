@@ -2,6 +2,12 @@ name: Context testing
 on: push
 
 jobs:
+  functions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: dump
+        run: |
+          echo ${{ contains('hello', 'll') }}
   dump_contexts_to_log:
     runs-on: ubuntu-latest
     steps:
