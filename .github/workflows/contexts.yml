@@ -9,7 +9,7 @@ jobs:
         if: ${{ contains(github.repository, github.actor) }}
         run: |
           echo ${{ contains('hello', 'll') }}
-          echo ${{ startWith('hello', 'he') }}
+          echo ${{ startsWith('hello', 'he') }}
           echo ${{ github.actor }}
           echo ${{ github.repository }}
           echo ${{ contains(github.repository, github.actor) }}
